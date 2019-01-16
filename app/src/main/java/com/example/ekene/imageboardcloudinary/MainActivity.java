@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Uri selectedVideo = data.getData();
             MediaManager.get()
                     .upload(selectedVideo)
-                    .unsigned("kennyy")
+                    .unsigned("YOUR_PRESET_NAME")
                     .option("resource_type", "video")
                     .callback(new UploadCallback() {
                         @Override
